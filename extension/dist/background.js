@@ -1,0 +1,1 @@
+chrome.runtime.onInstalled.addListener(()=>{console.log("[SmartMail AI] Extension installed successfully.")});chrome.runtime.onMessage.addListener((e,n,t)=>{if(e.type==="PING")return t({status:"PONG",time:Date.now()}),!0});
